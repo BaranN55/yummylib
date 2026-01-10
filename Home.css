@@ -6,6 +6,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(180deg, #c8ad7f, #e6ccb2);
 }
 
 .homeContainer {
@@ -15,6 +16,7 @@ body, html {
     text-align: center;
     box-shadow: 0 0 30px rgba(0,0,0,0.3);
     width: 500px;
+    height: 500px;
   }
 
 .homeContainer h1 {
@@ -51,11 +53,11 @@ body, html {
   }
 
   .btn1 {
-    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
   }
 
   .btn2 {
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    background: linear-gradient(135deg, #f05a5a, #990305);
   }
 
   .btn3 {
