@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Baloo 2", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeContainer {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px 60px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    width: 500px;
+  }
+
+.homeContainer h1 {
+  font-family: "Italianno", cursive;
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.homeContainer p {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+
+.buttonGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .madlibBtn {
+    display: block;
+    padding: 18px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .madlibBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+
+  .btn1 {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+  }
+
+  .btn2 {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+  }
+
+  .btn3 {
+    background: linear-gradient(135deg, #7f00ff, #e100ff);
+  }
+
+  .btn4 {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+  }
