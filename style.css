@@ -1,0 +1,103 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .startPage {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff5a5a, #6a0000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formBox {
+    background: rgb(18, 125, 48);
+    padding: 40px;
+    width: 420px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  }
+
+  .formBox h1 {
+    color: #ec2222; 
+  }
+
+  .formBox input {
+    width: 95%;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  .formBox button {
+    background: #ff5a5a; 
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .formBox button:hover {
+    background: #6a0000; 
+  }
+
+  .storyBack {
+    background-image: url("https://i.etsystatic.com/8464954/r/il/e977ae/5157048755/il_fullxfull.5157048755_b7it.jpg");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    font-family: "Italianno", cursive;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overlay {
+    background-color: rgba(0,0,0,0.65);
+    padding: 60px 80px;
+    color: white;
+    width: 70%;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 71px;
+  }
+  
+  .overlay p {
+    font-size: 35px;   /* increase text */
+    line-height: 1.6;
+  }
+  
+  .overlay b {
+    color: gold; /* highlight user words */
+  }
+
+  .overlay button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: gold;
+    font-weight: bold;
+  }
+  
+  .overlay button:hover {
+    background: #ff5a5a;
+    color: white;
+  }

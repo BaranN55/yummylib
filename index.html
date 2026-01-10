@@ -61,25 +61,31 @@
       const storyDiv = document.getElementById("storyContainer");
       storyDiv.style.display = "flex";
 
-            storyDiv.innerHTML = `
+      storyDiv.innerHTML = `
+  <div class="storyBack">
+    <div class="overlay">
+
       <h1>${name}'s Christmas Kitchen Chaos</h1>
 
-        <p>On Christmas Eve, <b>${name}</b> was busy trying to make the most <b>${adjective1}</b> holiday dessert ever: a giant <b>${dessert1}</b>.</p>
+      <p>On Christmas Eve, <b>${name}</b> was busy trying to make the most <b>${adjective1}</b> holiday dessert ever: a giant <b>${dessert1}</b>.</p>
 
-        <p>While <b>${adverb1}</b> attempting to <b>${verb1}</b> in the kitchen, disaster struck when <b>${food1}</b> went flying across the room.</p>
+      <p>While <b>${adverb1}</b> attempting to <b>${verb1}</b> in the kitchen, disaster struck when <b>${food1}</b> went flying across the room.</p>
 
-        <p>Feeling extremely <b>${emotion}</b>, ${name} decided to <b>${verb2}</b> to the nearest <b>${place}</b> for help.</p>
+      <p>Feeling extremely <b>${emotion}</b>, ${name} decided to <b>${verb2}</b> to the nearest <b>${place}</b> for help.</p>
 
-        <p>There, they found a <b>${adjective2}</b> Santa stuffing <b>${food2}</b> into a <b>${container}</b> while sipping on <b>${number}</b> cups of <b>${color}</b> <b>${drink}</b>.</p>
+      <p>There, they found a <b>${adjective2}</b> Santa stuffing <b>${food2}</b> into a <b>${container}</b> while sipping on <b>${number}</b> cups of <b>${color}</b> <b>${drink}</b>.</p>
 
-        <p>"<b>${exclamation}</b>!" Santa yelled, slipping on frosting but still managing to <b>${verb3}</b> like a pro.</p>
+      <p>"<b>${exclamation}</b>!" Santa yelled, slipping on frosting but still managing to <b>${verb3}</b> like a pro.</p>
 
-        <p>In the end, the <b>${adjective3}</b> Christmas feast was saved, the dessert was delicious, and everyone agreed it was the messiest — and tastiest — holiday ever.</p>
+      <p>In the end, the <b>${adjective3}</b> Christmas feast was saved, the dessert was delicious, and everyone agreed it was the messiest — and tastiest — holiday ever.</p>
 
-        <p><b>Merry Christmas, and never trust Santa in the kitchen!</b></p>
-<button onclick="playAgain()">Play Again</button>
-        </div>
-      </div>`;
+      <p><b>Merry Christmas, and never trust Santa in the kitchen!</b></p>
+
+      <button onclick="playAgain()">Play Again</button>
+
+    </div>
+  </div>
+`;
     }
 
     function playAgain() {
@@ -87,6 +93,6 @@
       document.getElementById("storyContainer").style.display = "none";
     }
   </script>
-  
+
 </body>
 </html>
