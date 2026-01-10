@@ -33,5 +33,60 @@
 
         <button onclick="makeStory()">Create My Story</button>
     </div>
+
+    <div id="storyContainer" style="display:none;"></div>
+
+    <script>
+        function makeStory() {
+          const name = document.getElementById("name").value;
+          const dessert1 = document.getElementById("dessert1").value;
+          const verb1 = document.getElementById("verb1").value;
+          const adjective1 = document.getElementById("adjective1").value;
+          const adverb1 = document.getElementById("adverb1").value;
+          const food1 = document.getElementById("food1").value;
+          const verb2 = document.getElementById("verb2").value;
+          const adjective2 = document.getElementById("adjective2").value;
+          const place = document.getElementById("place").value;
+          const emotion = document.getElementById("emotion").value;
+          const container = document.getElementById("container").value;
+          const food2 = document.getElementById("food2").value;
+          const adjective3 = document.getElementById("adjective3").value;
+          const verb3 = document.getElementById("verb3").value;
+          const exclamation = document.getElementById("exclamation").value;
+          const drink = document.getElementById("drink").value;
+          const color = document.getElementById("color").value;
+          const number = document.getElementById("number").value;
+
+          document.querySelector(".formBox").style.display = "none";
+      const storyDiv = document.getElementById("storyContainer");
+      storyDiv.style.display = "flex";
+
+            storyDiv.innerHTML = `
+      <h1>${name}'s Christmas Kitchen Chaos</h1>
+
+        <p>On Christmas Eve, <b>${name}</b> was busy trying to make the most <b>${adjective1}</b> holiday dessert ever: a giant <b>${dessert1}</b>.</p>
+
+        <p>While <b>${adverb1}</b> attempting to <b>${verb1}</b> in the kitchen, disaster struck when <b>${food1}</b> went flying across the room.</p>
+
+        <p>Feeling extremely <b>${emotion}</b>, ${name} decided to <b>${verb2}</b> to the nearest <b>${place}</b> for help.</p>
+
+        <p>There, they found a <b>${adjective2}</b> Santa stuffing <b>${food2}</b> into a <b>${container}</b> while sipping on <b>${number}</b> cups of <b>${color}</b> <b>${drink}</b>.</p>
+
+        <p>"<b>${exclamation}</b>!" Santa yelled, slipping on frosting but still managing to <b>${verb3}</b> like a pro.</p>
+
+        <p>In the end, the <b>${adjective3}</b> Christmas feast was saved, the dessert was delicious, and everyone agreed it was the messiest — and tastiest — holiday ever.</p>
+
+        <p><b>Merry Christmas, and never trust Santa in the kitchen!</b></p>
+<button onclick="playAgain()">Play Again</button>
+        </div>
+      </div>`;
+    }
+
+    function playAgain() {
+      document.querySelector(".formBox").style.display = "block";
+      document.getElementById("storyContainer").style.display = "none";
+    }
+  </script>
+  
 </body>
 </html>
