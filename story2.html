@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <title>YummyLib</title>
   <link rel="stylesheet" href="story2.css">
-  <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Italianno&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Italianno&display=swap" rel="stylesheet">
 </head>
 <body class="startPage">
 
     <div class="formBox">
         <h1>Mad Libs Story Generator</h1>
-        <p>Enter your words to create a legendary story ✨</p>
+        <p>Enter your words to create a sweet story 🍪 </p>
 
         <input id="name" placeholder="Character name">
         <input id="dessert1" placeholder="A dessert">
@@ -81,7 +81,12 @@
 
       <p><b>Merry Christmas, and never trust Santa in the kitchen!</b></p>
 
-      <button onclick="playAgain()">Play Again</button>
+      <div class="buttonRow">
+
+        <button onclick="playAgain()">Play Again</button>
+        <button onclick="goHome()">Go Back to Home Page</button>
+
+      </div>
 
     </div>
   </div>
@@ -92,6 +97,10 @@
       document.querySelector(".formBox").style.display = "block";
       document.getElementById("storyContainer").style.display = "none";
     }
+
+    function goHome() {
+    window.location.href = "index.html";
+  }
   </script>
 
 </body>
