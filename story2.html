@@ -38,6 +38,14 @@
 
     <script>
         function makeStory() {
+          const inputs = document.querySelectorAll(".formBox input");
+
+          for (let i = 0; i < inputs.length; i++) {
+          if (inputs[i].value.trim() === "") {
+          alert("Please fill in all the boxes before creating your story.");
+          return; 
+          }
+        }
           const name = document.getElementById("name").value;
           const dessert1 = document.getElementById("dessert1").value;
           const verb1 = document.getElementById("verb1").value;
